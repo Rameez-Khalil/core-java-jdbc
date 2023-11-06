@@ -27,6 +27,7 @@ public class Main {
 				String city = br.readLine();
 				
 				Student student = new Student(name, phone,city);
+				StudentDAO.inertStudenttoDB(student);
 				System.out.println(student);
 			} else if (choice == 2) {
 				// delete students
